@@ -1,7 +1,8 @@
-String1_3
-Given 2 strings, return their concatenation, except omit the first char of each. The strings will be at least length 1.
+String1_4
+Given a string, return a string length 1 from its front, unless front is false, in which case return a string
+length 1 from its back. The string will be non-empty.
 
 
-nonStart("Hello", "There") → "ellohere"
-nonStart("java", "code") → "avaode"
-nonStart("shotl", "java") → "hotlava"
+theEnd("Hello", true) → "H"
+theEnd("Hello", false) → "o"
+theEnd("oh", true) → "o"
