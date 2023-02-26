@@ -1,7 +1,7 @@
-String1_5
-Given 2 strings, a and b, return a new string made of the first char of a and the last char of b, so "yo" and "java" yields "ya". If either string is length 0, use '@' for its missing char.
+String1_6
+Given a string, if the string begins with "red" or "blue" return that color string, otherwise return the empty string.
 
 
-lastChars("last", "chars") → "ls"
-lastChars("yo", "java") → "ya"
-lastChars("hi", "") → "h@"
+seeColor("redxx") → "red"
+seeColor("xxred") → ""
+seeColor("blueTimes") → "blue"
