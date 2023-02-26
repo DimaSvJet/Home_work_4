@@ -1,8 +1,7 @@
-String1_4
-Given a string, return a string length 1 from its front, unless front is false, in which case return a string
-length 1 from its back. The string will be non-empty.
+String1_5
+Given 2 strings, a and b, return a new string made of the first char of a and the last char of b, so "yo" and "java" yields "ya". If either string is length 0, use '@' for its missing char.
 
 
-theEnd("Hello", true) → "H"
-theEnd("Hello", false) → "o"
-theEnd("oh", true) → "o"
+lastChars("last", "chars") → "ls"
+lastChars("yo", "java") → "ya"
+lastChars("hi", "") → "h@"
