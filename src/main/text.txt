@@ -1,7 +1,6 @@
-String1_7
-Given a string and an int n, return a string made of the first and last n chars from the string.
-The string length will be at least n.
-
-nTwice("Hello", 2) → "Helo"
-nTwice("Chocolate", 3) → "Choate"
-nTwice("Chocolate", 1) → "Ce"
+String1_8
+Given two strings, append them together (known as "concatenation") and return the result. However, if
+the concatenation creates a double-char, then omit one of the chars, so "abc" and "cat" yields "abcat".
+conCat("abc", "cat") → "abcat"
+conCat("dog", "cat") → "dogcat"
+conCat("abc", "") → "abc"
