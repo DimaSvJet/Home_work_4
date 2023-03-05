@@ -1,6 +1,7 @@
-String1_8
-Given two strings, append them together (known as "concatenation") and return the result. However, if
-the concatenation creates a double-char, then omit one of the chars, so "abc" and "cat" yields "abcat".
-conCat("abc", "cat") → "abcat"
-conCat("dog", "cat") → "dogcat"
-conCat("abc", "") → "abc"
+String1_9
+Given a string, if the first or last chars are 'x', return the string without those 'x' chars,
+and otherwise return the string unchanged.
+
+withoutX("xHix") → "Hi"
+withoutX("xHi") → "Hi"
+withoutX("Hxix") → "Hxi"
