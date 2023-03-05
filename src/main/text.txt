@@ -1,7 +1,7 @@
-String1_9
-Given a string, if the first or last chars are 'x', return the string without those 'x' chars,
-and otherwise return the string unchanged.
+String1_10
+Given a string, return a "rotated right 2" version where the last 2 chars are moved to the start.
+The string length will be at least 2.
 
-withoutX("xHix") → "Hi"
-withoutX("xHi") → "Hi"
-withoutX("Hxix") → "Hxi"
+right2("Hello") → "loHel"
+right2("java") → "vaja"
+right2("Hi") → "Hi"
