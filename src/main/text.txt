@@ -1,7 +1,7 @@
-String1_10
-Given a string, return a "rotated right 2" version where the last 2 chars are moved to the start.
-The string length will be at least 2.
+String2_1
+Return the number of times that the string "code" appears anywhere in the given string,
+except we'll accept any letter for the 'd', so "cope" and "cooe" count.
 
-right2("Hello") → "loHel"
-right2("java") → "vaja"
-right2("Hi") → "Hi"
+countCode("aaacodebbb") → 1
+countCode("codexxcode") → 2
+countCode("cozexxcope") → 2
