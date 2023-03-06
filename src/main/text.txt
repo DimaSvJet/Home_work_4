@@ -1,7 +1,7 @@
-String2_1
-Return the number of times that the string "code" appears anywhere in the given string,
-except we'll accept any letter for the 'd', so "cope" and "cooe" count.
+String2_2
+Returns true if for every '*' (star) in the string, if there are chars both immediately before and
+after the star, they are the same.
 
-countCode("aaacodebbb") → 1
-countCode("codexxcode") → 2
-countCode("cozexxcope") → 2
+sameStarChar("xy*yzz") → true
+sameStarChar("xy*zzz") → false
+sameStarChar("*xa*az") → true
