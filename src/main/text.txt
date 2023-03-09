@@ -1,5 +1,7 @@
-String1_1
-Given an "out" string length 4, such as "<<>>", and a word, return a new string where the word is in the middle
-of the out string, e.g. "<<word>>". Note: use str.substring(i, j) to extract the String starting at index i and
-going up to but not including index j.
+String2_5
+Given a string and a non-empty word string, return a version of the original String where all chars have been replaced
+by pluses ("+"), except for appearances of the word string which are preserved unchanged.
 
+plusOut("12xy34", "xy") → "++xy++"
+plusOut("12xy34", "1") → "1+++++"
+plusOut("12xy34xyabcxy", "xy") → "++xy++xy+++xy"
