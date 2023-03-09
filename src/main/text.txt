@@ -1,7 +1,7 @@
-String2_4
-Return true if the string "cat" and "dog" appear the same number of times in the given string.
+String2_5
+Given a string and a non-empty word string, return a version of the original String where all chars have been replaced
+by pluses ("+"), except for appearances of the word string which are preserved unchanged.
 
-
-catDog("catdog") → true
-catDog("catcat") → false
-catDog("1cat1cadodog") → true
+plusOut("12xy34", "xy") → "++xy++"
+plusOut("12xy34", "1") → "1+++++"
+plusOut("12xy34xyabcxy", "xy") → "++xy++xy+++xy"
