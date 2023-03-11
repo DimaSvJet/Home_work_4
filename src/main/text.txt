@@ -1,7 +1,9 @@
-String2_5
-Given a string and a non-empty word string, return a version of the original String where all chars have been replaced
-by pluses ("+"), except for appearances of the word string which are preserved unchanged.
+String3_1
+Given a string, count the number of words ending in 'y' or 'z' -- so the 'y' in "heavy" and the 'z' in "fez" count,
+but not the 'y' in "yellow" (not case sensitive). We'll say that a y or z is at the end of a word if there is not
+an alphabetic letter immediately following it.
+(Note: Character.isLetter(char) tests if a char is an alphabetic letter.)
 
-plusOut("12xy34", "xy") → "++xy++"
-plusOut("12xy34", "1") → "1+++++"
-plusOut("12xy34xyabcxy", "xy") → "++xy++xy+++xy"
+countYZ("fez day") → 2
+countYZ("day fez") → 2
+countYZ("day fyyyz") → 2
