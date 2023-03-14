@@ -1,5 +1,120 @@
 String1_1
 Given an "out" string length 4, such as "<<>>", and a word, return a new string where the word is in the middle
 of the out string, e.g. "<<word>>". Note: use str.substring(i, j) to extract the String starting at index i and
-going up to but not including index j.
+going up to but not including index j
 
+String1_2
+Given a string of even length, return the first half. So the string "WooHoo" yields "Woo".
+
+String1_3
+Given 2 strings, return their concatenation, except omit the first char of each. The strings will be at least length 1.
+nonStart("Hello", "There") → "ellohere"
+nonStart("java", "code") → "avaode"
+nonStart("shotl", "java") → "hotlava"
+
+String1_4
+Given a string, return a string length 1 from its front, unless front is false, in which case return a string
+length 1 from its back. The string will be non-empty.
+theEnd("Hello", true) → "H"
+theEnd("Hello", false) → "o"
+theEnd("oh", true) → "o"
+
+String1_5
+Given 2 strings, a and b, return a new string made of the first char of a and the last char of b,
+so "yo" and "java" yields "ya". If either string is length 0, use '@' for its missing char.
+lastChars("last", "chars") → "ls"
+lastChars("yo", "java") → "ya"
+lastChars("hi", "") → "h@"
+
+String1_6
+Given a string, if the string begins with "red" or "blue" return that color string, otherwise return the empty string.
+seeColor("redxx") → "red"
+seeColor("xxred") → ""
+seeColor("blueTimes") → "blue"
+
+String1_7
+Given a string and an int n, return a string made of the first and last n chars from the string.
+The string length will be at least n.
+nTwice("Hello", 2) → "Helo"
+nTwice("Chocolate", 3) → "Choate"
+nTwice("Chocolate", 1) → "Ce"
+
+String1_8
+Given two strings, append them together (known as "concatenation") and return the result. However, if
+the concatenation creates a double-char, then omit one of the chars, so "abc" and "cat" yields "abcat".
+conCat("abc", "cat") → "abcat"
+conCat("dog", "cat") → "dogcat"
+conCat("abc", "") → "abc"
+
+String1_9
+Given a string, if the first or last chars are 'x', return the string without those 'x' chars,
+and otherwise return the string unchanged.
+withoutX("xHix") → "Hi"
+withoutX("xHi") → "Hi"
+withoutX("Hxix") → "Hxi"
+
+String1_10
+Given a string, return a "rotated right 2" version where the last 2 chars are moved to the start.
+The string length will be at least 2.
+right2("Hello") → "loHel"
+right2("java") → "vaja"
+right2("Hi") → "Hi"
+
+String2_1
+Return the number of times that the string "code" appears anywhere in the given string,
+except we'll accept any letter for the 'd', so "cope" and "cooe" count.
+countCode("aaacodebbb") → 1
+countCode("codexxcode") → 2
+countCode("cozexxcope") → 2
+
+String2_2
+Returns true if for every '*' (star) in the string, if there are chars both immediately before and
+after the star, they are the same.
+sameStarChar("xy*yzz") → true
+sameStarChar("xy*zzz") → false
+sameStarChar("*xa*az") → true
+
+String2_3
+A sandwich is two pieces of bread with something in between.
+Return the string that is between the first and last appearance of "bread" in the given string,
+or return the empty string "" if there are not two pieces of bread.
+getSandwich("breadjambread") → "jam"
+getSandwich("xxbreadjambreadyy") → "jam"
+getSandwich("xxbreadyy") → ""
+
+String2_4
+Return true if the string "cat" and "dog" appear the same number of times in the given string.
+catDog("catdog") → true
+catDog("catcat") → false
+catDog("1cat1cadodog") → true
+
+String2_5
+Given a string and a non-empty word string, return a version of the original String where all chars have been replaced
+by pluses ("+"), except for appearances of the word string which are preserved unchanged.
+plusOut("12xy34", "xy") → "++xy++"
+plusOut("12xy34", "1") → "1+++++"
+plusOut("12xy34xyabcxy", "xy") → "++xy++xy+++xy"
+
+String3_1
+Given a string, count the number of words ending in 'y' or 'z' -- so the 'y' in "heavy" and the 'z' in "fez" count,
+but not the 'y' in "yellow" (not case sensitive). We'll say that a y or z is at the end of a word if there is not
+an alphabetic letter immediately following it.
+(Note: Character.isLetter(char) tests if a char is an alphabetic letter.)
+countYZ("fez day") → 2
+countYZ("day fez") → 2
+countYZ("day fyyyz") → 2
+
+String3_2
+We'll say that a "triple" in a string is a char appearing three times in a row.
+Return the number of triples in the given string. The triples may overlap.
+countTriple("abcXXXabc") → 1
+countTriple("xxxabyyyycd") → 3
+countTriple("a") → 0
+
+String3_3
+Given a string, return the sum of the numbers appearing in the string, ignoring all other characters.
+A number is a series of 1 or more digit chars in a row. (Note: Character.isDigit(char) tests if a char is
+one of the chars '0', '1', .. '9'. Integer.parseInt(string) converts a string to an int.)
+sumNumbers("abc123xyz") → 123
+sumNumbers("aa11b33") → 44
+sumNumbers("7 11") → 18
